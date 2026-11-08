@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cypress": "^16.2.1"
+    "@types/node": "^26.6.6",
+    "cypress": "^16.2.1",
+    "typescript": "^7.0.2"
   }
 }
