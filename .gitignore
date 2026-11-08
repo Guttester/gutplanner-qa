@@ -1,0 +1,417 @@
+
+# ============================================================
+# QA AUTOMATION — GLOBAL .GITIGNORE
+# Frameworks: Cypress | Playwright | Pytest | Selenium
+# Runtimes: Node.js | Python | Java
+# ============================================================
+
+.github
+
+# ============================================================
+# 01. NODE.JS / NPM / YARN / PNPM
+# ============================================================
+
+node_modules/
+bower_components/
+
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.nyc_output/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+
+*.tsbuildinfo
+
+
+# ============================================================
+# 02. PLAYWRIGHT
+# ============================================================
+
+playwright-report/
+test-results/
+blob-report/
+
+playwright/.cache/
+playwright/.auth/
+
+playwright-artifacts/
+playwright-results/
+
+trace.zip
+trace-*.zip
+
+*.webm
+
+storageState.json
+storage-state.json
+auth-state.json
+
+# Local browser downloads
+.ms-playwright/
+
+
+# ============================================================
+# 03. CYPRESS
+# ============================================================
+
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/results/
+
+cypress/reports/
+cypress/coverage/
+
+cypress.env.json
+
+# Cypress binary cache
+Cypress/
+
+
+# ============================================================
+# 04. PYTHON / PYTEST
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.hypothesis/
+.tox/
+.nox/
+
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+.pyright/
+.dmypy.json
+dmypy.json
+
+.coverage
+.coverage.*
+coverage.xml
+pytestdebug.log
+
+htmlcov/
+pytest-report/
+pytest-results/
+
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+.eggs/
+
+.pybuilder/
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# ============================================================
+# 05. PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+
+.python-version
+
+# Local virtual environment configuration
+pyvenv.cfg
+
+
+# ============================================================
+# 06. SELENIUM / WEBDRIVER
+# ============================================================
+
+# Downloaded browser drivers
+/drivers/chromedriver
+/drivers/chromedriver.exe
+/drivers/geckodriver
+/drivers/geckodriver.exe
+/drivers/msedgedriver
+/drivers/msedgedriver.exe
+/drivers/IEDriverServer.exe
+
+# Selenium Manager local cache
+.selenium/
+selenium-cache/
+
+# Browser profiles created during tests
+browser-profile/
+browser-profiles/
+chrome-profile/
+firefox-profile/
+edge-profile/
+
+# Chrome temporary files
+DevToolsActivePort
+SingletonCookie
+SingletonLock
+SingletonSocket
+
+
+# ============================================================
+# 07. JAVA / MAVEN / GRADLE
+# ============================================================
+
+target/
+build/
+.gradle/
+
+*.class
+*.jar
+*.war
+*.ear
+
+# Java crash reports
+hs_err_pid*
+replay_pid*
+
+
+# ============================================================
+# 08. TEST REPORTS / ALLURE / JUNIT
+# ============================================================
+
+allure-results/
+allure-report/
+allure-history/
+
+junit-results/
+junit-reports/
+
+test-reports/
+automation-reports/
+
+reports/
+artifacts/
+
+# Generated XML test results
+TEST-*.xml
+test-results.xml
+
+# Coverage outputs
+coverage/
+coverage-final.json
+lcov.info
+lcov-report/
+
+
+# ============================================================
+# 09. SCREENSHOTS / VIDEOS / TEMPORARY MEDIA
+# ============================================================
+
+screenshots/
+videos/
+recordings/
+test-recordings/
+
+tmp/
+temp/
+.temp/
+
+# Generated visual diff artifacts
+visual-diffs/
+diff-output/
+
+# Keep approved visual regression baselines
+# Never ignore committed snapshot directories globally.
+
+
+# ============================================================
+# 10. LOGS / DEBUG / RUNTIME FILES
+# ============================================================
+
+*.log
+*.log.*
+*.pid
+*.pid.lock
+
+logs/
+debug/
+crash-reports/
+
+*.stackdump
+*.core
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+*.bak
+*.backup
+*.orig
+
+
+# ============================================================
+# 11. SECRETS / CREDENTIALS / TOKENS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+secrets/
+credentials/
+
+credentials.json
+service-account.json
+
+token.json
+tokens.json
+
+# Test authentication state
+.auth/
+auth.json
+auth-state.json
+user-session.json
+
+
+# ============================================================
+# 12. IDE / EDITORS
+# ============================================================
+
+.idea/
+*.iml
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.history/
+.fleet/
+
+.classpath
+.project
+.settings/
+
+*.code-workspace
+
+
+# ============================================================
+# 13. OPERATING SYSTEMS
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.Trash-*
+.nfs*
+
+
+# ============================================================
+# 14. DOCKER / LOCAL RUNTIME
+# ============================================================
+
+docker-compose.override.yml
+compose.override.yaml
+
+.docker-data/
+docker-data/
+
+# Local persistent volumes
+volumes/local/
+data/local/
+
+
+# ============================================================
+# 15. LOCAL DATABASES
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+local-db/
+database-backups/
+
+
+# ============================================================
+# 16. BUILD / DISTRIBUTION
+# ============================================================
+
+dist/
+out/
+
+*.map
+
+# Archive files generated locally
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+
+# ============================================================
+# 17. KEEP VERSIONED PROJECT CONFIGURATION
+# ============================================================
+
+# Intentionally NOT ignored:
+#
+# package.json
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+# playwright.config.ts
+# cypress.config.ts
+# pytest.ini
+# pyproject.toml
+# requirements.txt
+# pom.xml
+# build.gradle
+#
+# tests/
+# e2e/
+# cypress/e2e/
+# cypress/fixtures/
+# cypress/support/
+# tests/fixtures/
+# **/__snapshots__/
+# **/*-snapshots/
+#
+# .github/workflows/
+# Dockerfile
+# README.md
