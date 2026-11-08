@@ -78,7 +78,6 @@ cypress/coverage/
 cypress.env.json
 
 # Cypress binary cache
-Cypress/
 
 
 # ============================================================
